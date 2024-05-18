@@ -1,0 +1,6 @@
+all:
+	(cd build.linux; cmake ..; make)
+
+clean:
+	rm -rf build.linux ../bin
+	mkdir build.linux ../bin

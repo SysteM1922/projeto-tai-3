@@ -1,0 +1,6 @@
+all:
+	(cd build.windows; /opt/mxe/usr/bin/i686-w64-mingw32.static-cmake ..; make)
+
+clean:
+	rm -rf build.windows ../bin
+	mkdir build.windows ../bin

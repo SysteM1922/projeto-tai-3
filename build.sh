@@ -1,0 +1,1 @@
+c++ -Wall -O3 generate_freqs.cpp -o generate_freqs -lm
