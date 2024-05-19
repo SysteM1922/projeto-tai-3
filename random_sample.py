@@ -42,13 +42,13 @@ def random_sample(file_path):
 
 def main():
     parser = ArgumentParser(description='Generate a random sample of 5 seconds from a .wav file')
-    parser.add_argument('-f', '--file_path', type=str, help='Path to the .wav file')
+    parser.add_argument('file_path', help='Path to the .wav file', type=str)
     args = parser.parse_args()
 
     if not args.file_path:
         print('Please provide a path to the .wav file')
         return
-
+    
     random_sample(args.file_path)
 
 if __name__ == '__main__':
