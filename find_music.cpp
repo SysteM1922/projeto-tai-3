@@ -118,8 +118,10 @@ int main(int argc, char* argv[]) {
     }
 
     for (auto it = music_ncd.rbegin(); it != music_ncd.rend(); ++it) {
-        cout << it->first << " : " << it->second << endl;
+        cout << fixed << setprecision(6) << it->first << " | " << it->second << endl;
     }
+
+    cout << endl << music_ncd.begin()->second << endl << endl;
 
     fs::remove_all(temp_folder);
 
