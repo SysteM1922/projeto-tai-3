@@ -1,9 +1,9 @@
-# from a .wav file generate a random sample of 5 seconds abd save it as a new .wav file
-
 from argparse import ArgumentParser
 import wave
 import random
 import os
+
+SAMPLE_SIZE = 5
 
 def random_sample(file_path):
     with wave.open(file_path, 'rb') as wav_file:
@@ -20,10 +20,10 @@ def random_sample(file_path):
         print(f'Sample width: {sampwidth}')
         print(f'Duration: {duration} seconds')
         # generate random start time
-        start_time = random.uniform(0, duration - 5)
+        start_time = random.uniform(0, duration - SAMPLE_SIZE)
         start_frame = int(start_time * framerate)
         # generate random end time
-        end_time = start_time + 5
+        end_time = start_time + SAMPLE_SIZE
         end_frame = int(end_time * framerate)
         print(f'Start time: {start_time} seconds')
         print(f'End time: {end_time} seconds')
@@ -41,7 +41,7 @@ def random_sample(file_path):
         print(f'New file: {new_file_path}')
 
 def main():
-    parser = ArgumentParser(description='Generate a random sample of 5 seconds from a .wav file')
+    parser = ArgumentParser(description=f'Generate a random sample of {SAMPLE_SIZE} seconds from a .wav file')
     parser.add_argument('file_path', help='Path to the .wav file', type=str)
     args = parser.parse_args()
 
