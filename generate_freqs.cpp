@@ -1,5 +1,7 @@
 #include <iostream>
 #include <filesystem>
+#include <fstream>
+#include <string>
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -56,12 +58,17 @@ int main(int argc, char* argv[]) {
         string freq_path = freqs_folder + "/" + music_name + ".freq";
 
         string command = "./GetMaxFreqs/bin/GetMaxFreqs -w \"" + freq_path + "\"" + extra_args + " '" + music_path + "'";
-        cout << "--- " <<music_name << " ---" << endl;
+        cout << "--- " << music_name << " ---" << endl;
         if (system(command.c_str()) != 0) {
             cout << "Error: " << command << endl;
             return 1;
         }
     }
+
+    string args_path = freqs_folder + "/args";
+    ofstream args_file(args_path);
+    args_file << extra_args << endl;
+    args_file.close();
 
     return 0;
 }
