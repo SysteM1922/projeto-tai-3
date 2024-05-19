@@ -36,3 +36,5 @@
 *.freq
 args
 temp/
+generate_freqs
+find_music

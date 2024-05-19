@@ -126,15 +126,7 @@ int main (int argc, char* argv[]) {
 	plan = fftw_plan_dft_1d(ws, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
 
 	for(int n = 0 ; n <= (audioFile.frames() - ws * ds) / (sh * ds) ; ++n) {
-		for(int k = 0 ; k < ws ; ++k) { // Convert to mono and down-sample
-			in[k][0] = (int)samples[(n * (sh * ds) + k * ds) << 1] +
-			  samples[((n * (sh * ds) + k * ds) << 1) + 1];
-			for(int l = 1 ; l < ds ; ++l) {
-				in[k][0] += (int)samples[(n * (sh * ds) + k * ds + l) << 1] +
-				  samples[((n * (sh * ds) + k * ds + l) << 1) + 1];
-			}
-
-		}
+		z
 
 		fftw_execute(plan);
 
