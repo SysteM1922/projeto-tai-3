@@ -15,6 +15,7 @@ int compress_and_get_size(string compressor, string file);
 string concat_signatures(string compressor, string file1, string file2);
 float ncd(int x_size, int y_size, int xy_size);
 void set_extension(string compressor);
+string get_file_name(string file);
 
 int main(int argc, char* argv[]) {
 
@@ -112,12 +113,12 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        music_name = music_signature_path.substr(music_signature_path.find_last_of("/\\") + 1);
+        music_name = get_file_name(music_signature_path);
         music_ncd[ncd(sample_size, music_signature_size, concat_size)] = music_name;
     }
 
     for (auto it = music_ncd.rbegin(); it != music_ncd.rend(); ++it) {
-        cout << it->first << " : " << it->second.substr(0, it->second.find_last_of(".")) << endl;
+        cout << it->first << " : " << it->second << endl;
     }
 
     fs::remove_all(temp_folder);
@@ -126,8 +127,7 @@ int main(int argc, char* argv[]) {
 }
 
 int compress_and_get_size(string compressor, string file) {
-    string file_name = file.substr(file.find_last_of("/\\") + 1);
-    file_name = file_name.substr(0, file_name.find_last_of("."));
+    string file_name = get_file_name(file);
     string command = compressor + " -c \'" + file + "\' > \'" + temp_folder + "/" + file_name + "." + extension + "\'";
     if (system(command.c_str()) != 0) {
         return -1;
@@ -146,10 +146,8 @@ int compress_and_get_size(string compressor, string file) {
 }
 
 string concat_signatures(string compressor, string file1, string file2) {
-    string file1_name = file1.substr(file1.find_last_of("/\\") + 1);
-    string file2_name = file2.substr(file2.find_last_of("/\\") + 1);
-    file1_name = file1_name.substr(0, file1_name.find_last_of("."));
-    file2_name = file2_name.substr(0, file2_name.find_last_of("."));
+    string file1_name = get_file_name(file1);
+    string file2_name = get_file_name(file2);
 
     string command = "cat \'" + file1 + "\' \'" + file2 + "\' | " + compressor + " > \'" + temp_folder + "/" + file1_name + "_" + file2_name + ".freq" + "\'";
     if (system(command.c_str()) != 0) {
@@ -179,4 +177,9 @@ void set_extension(string compressor) {
     } else if (compressor == "lz4") {
         extension = "lz4";
     }
+}
+
+string get_file_name(string file) {
+    string file_name = file.substr(file.find_last_of("/\\") + 1);
+    return file_name.substr(0, file_name.find_last_of("."));
 }
