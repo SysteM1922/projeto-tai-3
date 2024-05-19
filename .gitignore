@@ -35,3 +35,4 @@
 *.wav
 *.freq
 args
+temp/
