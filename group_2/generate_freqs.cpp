@@ -65,7 +65,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    string args_path = freqs_folder + "/args";
+    string args_path = freqs_folder + "/__args";
     ofstream args_file(args_path); 
     args_file << extra_args << endl;
     args_file.close();
