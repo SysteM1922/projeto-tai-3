@@ -126,7 +126,6 @@ int main (int argc, char* argv[]) {
 	plan = fftw_plan_dft_1d(ws, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
 
 	for(int n = 0 ; n <= (audioFile.frames() - ws * ds) / (sh * ds) ; ++n) {
-		z
 
 		fftw_execute(plan);
 

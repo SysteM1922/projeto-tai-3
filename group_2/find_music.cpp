@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
 
     string extra_args = "";
     // read args from freqs_folder args file
-    ifstream args_file(freqs_folder + "/args");
+    ifstream args_file(freqs_folder + "/__args");
     if (args_file.is_open()) {
         string line;
         while (getline(args_file, line)) {
@@ -75,14 +75,14 @@ int main(int argc, char* argv[]) {
     }
 
     // get the signature of the sample
-    string command = "./GetMaxFreqs/bin/GetMaxFreqs -w \"" + temp_folder + "/sample.freqs\"" + extra_args + " '" + sample + "'";
+    string command = "./GetMaxFreqs/bin/GetMaxFreqs -w \"" + temp_folder + "/sample.freq\" " + extra_args + " '" + sample + "'";
     if (system(command.c_str()) != 0) {
         cerr << "Error: could not generate the signature of the sample" << endl;
         return 1;
     }
 
     // compress the signature and get the size of the compressed file
-    int sample_size = compress_and_get_size(compressor, temp_folder + "/sample.freqs");
+    int sample_size = compress_and_get_size(compressor, temp_folder + "/sample.freq");
 
     map<float, string> music_ncd;
 
@@ -102,7 +102,7 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        concat_file = concat_signatures(compressor, temp_folder + "/sample.freqs", music_signature_path);
+        concat_file = concat_signatures(compressor, temp_folder + "/sample.freq", music_signature_path);
         if (concat_file == "") {
             cerr << "Error: could not concatenate the signature of the sample and the music" << endl;
             return 1;

@@ -34,7 +34,8 @@
 # Project specific
 *.wav
 *.freq
-args
+__args
 temp/
 generate_freqs
 find_music
+venv/
