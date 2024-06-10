@@ -36,17 +36,23 @@ def add_analog_noise(audio_file: str, output_file: str) -> None:
     
     audio_data = AudioSegment.from_file(audio_file, format='wav')
 
+    # Reduzir a taxa de amostragem para 11025 Hz
     audio_data = audio_data.set_frame_rate(11025)
 
+    # Aplicar filtro passa-baixa e passa-alta
     audio_data = audio_data.low_pass_filter(4000)
     audio_data = audio_data.high_pass_filter(200)
 
+    # Aumentar a taxa de amostragem para 44100 Hz
     audio_data = audio_data.set_frame_rate(44100)
 
+    # Gerar ruído branco
     white_noise = WhiteNoise().to_audio_segment(duration=len(audio_data), volume=-40)
 
+    # Adicionar ruído branco ao áudio
     noisy_audio = audio_data.overlay(white_noise)
 
+    # Salvar o novo arquivo de áudio com ruído
     noisy_audio.export(output_file, format='wav')
 
 
