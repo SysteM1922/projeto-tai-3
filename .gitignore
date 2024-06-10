@@ -39,3 +39,6 @@ temp/
 generate_freqs
 find_music
 venv/
+
+!cafe-noise-32940.wav
+!city-traffic-outdoor-6414.wav
