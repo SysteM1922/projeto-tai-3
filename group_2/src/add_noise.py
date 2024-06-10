@@ -5,8 +5,6 @@ from pydub.generators import WhiteNoise
 import numpy as np
 import wave
 
-random.seed(0) # for testing purposes // remove for production
-
 def add_noise(audio_file: str, output_file: str, noise_level: float) -> None:
     
     with wave.open(audio_file, 'rb') as wav_file:

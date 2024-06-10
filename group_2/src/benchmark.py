@@ -7,12 +7,12 @@ WS = 1024
 SH = 256
 DS = 4
 NF = 4
-SAMPLE_SIZE = 5
+SAMPLE_SIZE = 10
 N = 0.5
 E = 500
 D = 0.5
 
-os.system(f'python src/generate_freqs.py -d "{MUSICS_DIR}" -o freqs/ -ws {WS} -sh {SH} -ds {DS} -nf {NF}')
+os.system(f'python3 src/generate_freqs.py -d "{MUSICS_DIR}" -o freqs/ -ws {WS} -sh {SH} -ds {DS} -nf {NF}')
 
 results = {}
 
@@ -27,8 +27,8 @@ for file in os.listdir(MUSICS_DIR):
 
     for run in range(10):
         print(f"Run {run}")
-        os.system(f'python src/random_sample.py -f "{MUSICS_DIR}/{file}" -o sample -s {SAMPLE_SIZE}')
-        os.system(f'python src/add_noise.py -f sample.wav -n {N} -e {E} -d {D}')
+        os.system(f'python3 src/random_sample.py -f "{MUSICS_DIR}/{file}" -o sample -s {SAMPLE_SIZE}')
+        os.system(f'python3 src/add_noise.py -f sample.wav -n {N} -e {E} -d {D}')
 
         results[music_name][run] = {}
 

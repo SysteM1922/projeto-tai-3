@@ -3,8 +3,6 @@ import wave
 import random
 import os
 
-random.seed(0) # for testing purposes // remove for production
-
 SAMPLE_SIZE = 5
 
 def random_sample(file_path: str, sample_size: int, output_name: str) -> None:
