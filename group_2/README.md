@@ -2,6 +2,9 @@
 ## Setup
 
 To run our project you need to download the dataset provided in `dataset_url.txt` and unzip the file into a new folder.
+
+The `install_reqs.sh` program must be run to install the necessary compressors.
+
 Then we highly recommend creating a python virtual environment and installing the requirements present in the `requirements.txt` file.
 
 ## Generate Freqs

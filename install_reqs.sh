@@ -1,0 +1,1 @@
+sudo apt install gzip bzip2 lzma zstd xz-utils lzop ffmpeg
