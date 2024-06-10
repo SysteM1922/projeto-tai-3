@@ -2,7 +2,7 @@
 ## Setup
 
 To run our project you need to download the dataset provided in `dataset_url.txt` and unzip the file into a new folder.
-Then we highly recommend creating a python virtual environment and installing the requirements present in the requirements.txt file.
+Then we highly recommend creating a python virtual environment and installing the requirements present in the `requirements.txt` file.
 
 ## Generate Freqs
 
