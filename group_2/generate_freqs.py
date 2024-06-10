@@ -1,6 +1,24 @@
 from argparse import ArgumentParser
 import os
 
+def generate_freqs(extra_args: str, output_dir: str, input_dir: str) -> None:
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    for file_name in os.listdir(input_dir):
+        if file_name.endswith('.wav'):
+            music_name = file_name.split('.')[0]
+            freq_path = f'{output_dir}/{music_name}.freq'
+            print(f'--- {music_name} ---')
+            
+            command = f'./GetMaxFreqs/bin/GetMaxFreqs -w "{freq_path}" {extra_args} "{input_dir}/{file_name}"'
+            os.system(command)
+            
+    with open(f'{output_dir}/__args', 'w') as f:
+        f.write(extra_args)
+
+
 def main():
 
     parser = ArgumentParser(description='Generate a .freq file for each of the .wav files in the input directory')
@@ -24,26 +42,14 @@ def main():
     if not args.output_dir:
         print('Please provide a path to the output directory')
         return
-    
-    if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_dir)
 
+    
     extra_args = f'-ws {args.window_size} -sh {args.shift} -ds {args.downsample} -nf {args.num_freqs}'
 
     if args.verbose:
         extra_args += ' -v'
     
-    for file_name in os.listdir(args.input_dir):
-        if file_name.endswith('.wav'):
-            music_name = file_name.split('.')[0]
-            freq_path = f'{args.output_dir}/{music_name}.freq'
-            print(f'--- {music_name} ---')
-            
-            command = f'./GetMaxFreqs/bin/GetMaxFreqs -w "{freq_path}" {extra_args} "{args.input_dir}/{file_name}"'
-            os.system(command)
-            
-    with open(f'{args.output_dir}/__args', 'w') as f:
-        f.write(extra_args)
+    generate_freqs(extra_args, args.output_dir, args.input_dir)
 
 if __name__ == '__main__':
     main()
