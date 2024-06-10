@@ -100,9 +100,9 @@ def main():
     
     audio_file = args.file.split('.')[0]
 
-    add_noise(args.file, f"{audio_file}_noisy.wav", 1)
+    add_noise(args.file, f"{audio_file}_noisy.wav", args.noise)
     add_analog_noise(args.file, f"{audio_file}_analog_noisy.wav")
-    add_echo(args.file, f"{audio_file}_echo.wav", 500, 0.5)
+    add_echo(args.file, f"{audio_file}_echo.wav", args.echo, args.decay)
     add_noise_file(args.file, f"{audio_file}_city_noisy.wav", "./noises/city-traffic-outdoor-6414.wav")
     add_noise_file(args.file, f"{audio_file}_cafe_noisy.wav", "./noises/cafe-noise-32940.wav")
 
