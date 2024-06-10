@@ -39,8 +39,6 @@ def set_extension(compressor: str) -> None:
         extension = "xz"
     if compressor == "lzop":
         extension = "lzo"
-    if compressor == "lz4":
-        extension = "lz4"
 
 def find_music(compressor: str, compressor_args: str, sample: str, freqs_folder: str) -> list:
 
@@ -72,15 +70,12 @@ def find_music(compressor: str, compressor_args: str, sample: str, freqs_folder:
 
     sorted_music_ncd = [(k, v) for k, v in sorted(music_ncd.items(), key=lambda item: item[1])]
 
-    for music, ncd_value in reversed(sorted_music_ncd):
-        print("{:.6f} | {}".format(ncd_value, music))
-
     return sorted_music_ncd
 
 def main():
     
     parser = ArgumentParser(description='Find the most similar audio files using Normalized Compression Distance')
-    parser.add_argument('-c', '--compressor', help='Compressor to use (gzip, bzip2, lzma, zstd, xz, lzop, lz4)', type=str, required=True)
+    parser.add_argument('-c', '--compressor', help='Compressor to use (gzip, bzip2, lzma, zstd, xz, lzop)', type=str, required=True)
     parser.add_argument('-s', '--sample', help='Sample file', type=str, required=True)
     parser.add_argument('-f', '--freqs_folder', help='Folder with frequency files', type=str, required=True)
     args = parser.parse_args()
@@ -97,7 +92,7 @@ def main():
     compressor_args = " ".join(compressor[1:])
     compressor = compressor[0]
 
-    if compressor not in ['gzip', 'bzip2', 'lzma', 'zstd', 'xz', 'lzop', 'lz4']:
+    if compressor not in ['gzip', 'bzip2', 'lzma', 'zstd', 'xz', 'lzop']:
         print('Invalid compressor')
         return
     
@@ -106,6 +101,9 @@ def main():
         return
 
     ranking = find_music(compressor, compressor_args, args.sample, args.freqs_folder)
+
+    for music, ncd_value in reversed(ranking):
+        print("{:.6f} | {}".format(ncd_value, music))
     print(f'\nBest match:\n\t{ranking[0][0]}\n')
     
     

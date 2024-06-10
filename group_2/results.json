@@ -1,0 +1,666 @@
+{
+    "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)": {
+        "0": {
+            "gzip": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0006192163473115
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0010035982669572
+                        ],
+                        [
+                            "RUNNING-NF-HOPE",
+                            1.0018563357546408
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0009288245209673
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0009546422539348
+                        ],
+                        [
+                            "RUNNING-NF-HOPE",
+                            1.0013317191283293
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0004816127145757
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0008812082344014
+                        ],
+                        [
+                            "RUNNING-NF-HOPE",
+                            1.0015738498789346
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0010664281537032
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0011749443125353
+                        ],
+                        [
+                            "RUNNING-NF-HOPE",
+                            1.0019774011299436
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0020071965339143
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.002648869930166
+                        ],
+                        [
+                            "RUNNING-NF-HOPE",
+                            1.003228410008071
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0012973343450908
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0019264508583026
+                        ],
+                        [
+                            "HOPE-NF-HOPE",
+                            1.001940267479731
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                }
+            },
+            "bzip2": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0093592985452038
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0127083001795985
+                        ],
+                        [
+                            "Nightrain-Guns N Roses-Appetite For Destruction",
+                            1.016504526795254
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0132084479505308
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0136941315556138
+                        ],
+                        [
+                            "Nightrain-Guns N Roses-Appetite For Destruction",
+                            1.015098689759883
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0132539159297065
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0139240090637418
+                        ],
+                        [
+                            "Nightrain-Guns N Roses-Appetite For Destruction",
+                            1.0160827756846427
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0131358576073035
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0140268715756928
+                        ],
+                        [
+                            "Thunderstruck-ACDC-The Razors Edge",
+                            1.016276272026042
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.014413349398686
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0165840202292207
+                        ],
+                        [
+                            "Nightrain-Guns N Roses-Appetite For Destruction",
+                            1.0168138109430356
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.012117216450315
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0155003119766182
+                        ],
+                        [
+                            "Voltar Atr\u00e1s-Tuna de Medicina da Universidade de Coimbra-Voltar Atr\u00e1s",
+                            1.015521407769998
+                        ]
+                    ],
+                    "guessed_rank": 1,
+                    "guessed": false
+                }
+            },
+            "lzma": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.0033964095099466
+                        ],
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0060949063996518
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            1.0076045627376427
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0057683935568131
+                        ],
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            1.007381587041214
+                        ],
+                        [
+                            "Estrada-Rui Massena-Ensemble",
+                            1.0075492046373686
+                        ]
+                    ],
+                    "guessed_rank": 27,
+                    "guessed": false
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            1.0058437564076277
+                        ],
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0058772311710926
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            1.0060262572637921
+                        ]
+                    ],
+                    "guessed_rank": 28,
+                    "guessed": false
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Estrada-Rui Massena-Ensemble",
+                            1.0065606183158085
+                        ],
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0076186329995647
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            1.007748045053447
+                        ]
+                    ],
+                    "guessed_rank": 25,
+                    "guessed": false
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0082716586852416
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            1.0087524212640793
+                        ],
+                        [
+                            "The Search-NF-The Search",
+                            1.0090459122717188
+                        ]
+                    ],
+                    "guessed_rank": 31,
+                    "guessed": false
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            1.0065302568567698
+                        ],
+                        [
+                            "Numb-Linkin Park-Meteora",
+                            1.006852474138499
+                        ],
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            1.007381587041214
+                        ]
+                    ],
+                    "guessed_rank": 31,
+                    "guessed": false
+                }
+            },
+            "zstd": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9890800349438882
+                        ],
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            1.0001927005048754
+                        ],
+                        [
+                            "Thunderstruck-ACDC-The Razors Edge",
+                            1.0004851509165886
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9989584033331094
+                        ],
+                        [
+                            "Thunderstruck-ACDC-The Razors Edge",
+                            0.9998267318155041
+                        ],
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            0.9998458395960997
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9987568039782273
+                        ],
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            1.0007767593599504
+                        ],
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            1.0008093421204765
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9979168066662186
+                        ],
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            1.000501021312676
+                        ],
+                        [
+                            "Faroleiro-Dillaz-Oitavo C\u00e9u",
+                            1.0012708682340707
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            1.000772797527048
+                        ],
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            1.001233283231202
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            1.0017233059902115
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Venham Mais Cinco-Jos\u00e9 Afonso-Venham Mais Cinco",
+                            0.999383358384399
+                        ],
+                        [
+                            "The Search-NF-The Search",
+                            0.9998295318945826
+                        ],
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9998656004300787
+                        ]
+                    ],
+                    "guessed_rank": 2,
+                    "guessed": false
+                }
+            },
+            "xz": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Can\u00e7\u00e3o de Engate-Tuna Universit\u00e1ria Da Madeira-25 anos (2019)",
+                            0.9896674200839523
+                        ],
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.992637505413599
+                        ],
+                        [
+                            "Estrada-Rui Massena-Ensemble",
+                            0.9942713927676333
+                        ]
+                    ],
+                    "guessed_rank": 0,
+                    "guessed": true
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.9922044174967518
+                        ],
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            0.9938775510204082
+                        ],
+                        [
+                            "Estrada-Rui Massena-Ensemble",
+                            0.9939133548156105
+                        ]
+                    ],
+                    "guessed_rank": 26,
+                    "guessed": false
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.9922044174967518
+                        ],
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            0.9926530612244898
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.9931350114416476
+                        ]
+                    ],
+                    "guessed_rank": 28,
+                    "guessed": false
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.9939367691641403
+                        ],
+                        [
+                            "Estrada-Rui Massena-Ensemble",
+                            0.9942713927676333
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.9945652173913043
+                        ]
+                    ],
+                    "guessed_rank": 26,
+                    "guessed": false
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.9939367691641403
+                        ],
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.994279176201373
+                        ],
+                        [
+                            "The Search-NF-The Search",
+                            0.9948901379662749
+                        ]
+                    ],
+                    "guessed_rank": 31,
+                    "guessed": false
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Can You Hear The Music-Ludwig G\u00f6ransson-Oppenheimer (Original Motion Picture Soundtrack)",
+                            0.9934693877551021
+                        ],
+                        [
+                            "Cornfield Chase-Hans Zimmer-Interstellar (Original Motion Picture Soundtrack) Expanded Edition",
+                            0.9935036812472932
+                        ],
+                        [
+                            "Numb-Linkin Park-Meteora",
+                            0.9939569101418813
+                        ]
+                    ],
+                    "guessed_rank": 31,
+                    "guessed": false
+                }
+            },
+            "lzop": {
+                "sample.wav": {
+                    "top_3": [
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.795543210261852
+                        ],
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            0.9068812719927016
+                        ],
+                        [
+                            "HOPE-NF-HOPE",
+                            0.9105411954765751
+                        ]
+                    ],
+                    "guessed_rank": 9,
+                    "guessed": false
+                },
+                "sample_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.7954807902375082
+                        ],
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            0.9042421477909554
+                        ],
+                        [
+                            "HOPE-NF-HOPE",
+                            0.9103841321127266
+                        ]
+                    ],
+                    "guessed_rank": 7,
+                    "guessed": false
+                },
+                "sample_analog_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.7947629599575544
+                        ],
+                        [
+                            "HOPE-NF-HOPE",
+                            0.9248339615867888
+                        ],
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            0.9356184021894957
+                        ]
+                    ],
+                    "guessed_rank": 10,
+                    "guessed": false
+                },
+                "sample_echo.wav": {
+                    "top_3": [
+                        [
+                            "Good To Be-Mark Ambor-Good To Be",
+                            0.9797691554154777
+                        ],
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            0.9904861201616056
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            0.9947973007778292
+                        ]
+                    ],
+                    "guessed_rank": 10,
+                    "guessed": false
+                },
+                "sample_city_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Afterglow-Ed Sheeran-Afterglow",
+                            0.8076526949845511
+                        ],
+                        [
+                            "HOPE-NF-HOPE",
+                            0.9116406390235147
+                        ],
+                        [
+                            "Voltar Atr\u00e1s-Tuna de Medicina da Universidade de Coimbra-Voltar Atr\u00e1s",
+                            0.9806041616099208
+                        ]
+                    ],
+                    "guessed_rank": 6,
+                    "guessed": false
+                },
+                "sample_cafe_noisy.wav": {
+                    "top_3": [
+                        [
+                            "Habibi-Dillaz-O Pr\u00f3prio",
+                            0.9210869281897562
+                        ],
+                        [
+                            "Sweet Child O Mine-Guns N Roses-Appetite For Destruction",
+                            0.9936640395611188
+                        ],
+                        [
+                            "Nightrain-Guns N Roses-Appetite For Destruction",
+                            1.0001295728415325
+                        ]
+                    ],
+                    "guessed_rank": 25,
+                    "guessed": false
+                }
+            }
+        }
+    }
+}

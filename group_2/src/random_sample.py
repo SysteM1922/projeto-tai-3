@@ -3,7 +3,7 @@ import wave
 import random
 import os
 
-#random.seed(0) # for testing purposes // remove for production
+random.seed(0) # for testing purposes // remove for production
 
 SAMPLE_SIZE = 5
 

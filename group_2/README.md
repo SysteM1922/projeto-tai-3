@@ -1,7 +1,8 @@
 # Identify the Music (Group 2)
-## Dataset
+## Setup
 
 To run our project you need to download the dataset provided in `dataset_url.txt` and unzip the file into a new folder.
+Then we highly recommend creating a python virtual environment and installing the requirements present in the requirements.txt file.
 
 ## Generate Freqs
 
@@ -19,11 +20,11 @@ To run __generate_freqs.py__, you must run the following program with the follow
 ### Examples of usage
 
 ```bash
-python generate_freqs.py -d musics/ -o freqs/
+python src/generate_freqs.py -d musics/ -o freqs/
 ```
 
 ```bash
-python generate_freqs.py -v -ws 1024 -sh 256 -ds 4 -nf 4 -d musics/ -o freqs/
+python src/generate_freqs.py -v -ws 1024 -sh 256 -ds 4 -nf 4 -d musics/ -o freqs/
 ```
 
 ## Random Sample
@@ -38,11 +39,11 @@ To run __random_sample.py__, you must run the following program with the followi
 ### Examples of usage
 
 ```bash
-python random_sample.py -f musics/Afterglow-Ed\ Sheeran-Afterglow.wav
+python src/random_sample.py -f musics/Afterglow-Ed\ Sheeran-Afterglow.wav
 ```
 
 ```bash
-python random_sample.py -s 5 -f musics/Afterglow-Ed Sheeran-Afterglow -o sample
+python src/random_sample.py -s 5 -f musics/Afterglow-Ed Sheeran-Afterglow -o sample
 ```
 
 ## Add Noise
@@ -57,11 +58,11 @@ To run __add_noise.py__, you must run the following program with the following a
 ### Examples of usage
 
 ```bash
-python add_noise.py -f sample.wav
+python src/add_noise.py -f sample.wav
 ```
 
 ```bash
-python add_noise.py -f sample.wav -n 0.5 -e 500 -d 0.5 
+python src/add_noise.py -f sample.wav -n 0.5 -e 500 -d 0.5 
 ```
 
 ## Find Music
@@ -73,9 +74,9 @@ To run __find_music.py__, you must run the following program with the following 
 - `-f` to specify the folder the "signatures" of the musics are stored
 
 ```bash
-python find_music.py -c xz -s sample.wav -f freqs/
+python src/find_music.py -c xz -s sample.wav -f freqs/
 ```
 
 ```bash
-python find_music.py -c "xz -9" -s sample.wav -f freqs/
+python src/find_music.py -c "xz -9" -s sample.wav -f freqs/
 ```

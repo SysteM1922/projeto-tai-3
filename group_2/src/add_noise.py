@@ -5,6 +5,8 @@ from pydub.generators import WhiteNoise
 import numpy as np
 import wave
 
+random.seed(0) # for testing purposes // remove for production
+
 def add_noise(audio_file: str, output_file: str, noise_level: float) -> None:
     
     with wave.open(audio_file, 'rb') as wav_file:
@@ -92,13 +94,13 @@ def main():
         print('Please provide a path to the audio file')
         return
     
-    audio_file = args.file
+    audio_file = args.file.split('.')[0]
 
-    add_noise(audio_file, f"{audio_file}_noisy.wav", 1)
-    add_analog_noise(audio_file, f"{audio_file}_analog_noisy.wav")
-    add_echo(audio_file, f"{audio_file}_echo.wav", 500, 0.5)
-    add_noise_file(audio_file, f"{audio_file}_city_noisy.wav", "noises/city-traffic-outdoor-6414.wav")
-    add_noise_file(audio_file, f"{audio_file}_cafe_noisy.wav", "noises/cafe-noise-32940.wav")
+    add_noise(args.file, f"{audio_file}_noisy.wav", 1)
+    add_analog_noise(args.file, f"{audio_file}_analog_noisy.wav")
+    add_echo(args.file, f"{audio_file}_echo.wav", 500, 0.5)
+    add_noise_file(args.file, f"{audio_file}_city_noisy.wav", "./noises/city-traffic-outdoor-6414.wav")
+    add_noise_file(args.file, f"{audio_file}_cafe_noisy.wav", "./noises/cafe-noise-32940.wav")
 
 if __name__ == '__main__':
     main()
