@@ -3,4 +3,4 @@
 <h2>103668 Gonçalo Rodrigues Silva<br>
 103600 Guilherme Costa Antunes<br>
 103541 Pedro Miguel Rodrigues Rasinhas</h2>
-<h3>Nota: </h3>
+<h3>Nota: 17.2</h3>
